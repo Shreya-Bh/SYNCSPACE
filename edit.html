@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance System</title>
+
+    <link rel="stylesheet" href="edit.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="navbar-container">
+            <div class="navbar-brand">
+                <div class="logo">
+                    <img src="../MainProject/Media/logo.gif" loop>
+                </div>
+            </div>
+            <ul class="navbar-menu" id="navbar-menu">
+
+                <li><a href="dashboard.html">Back</a></li>
+               
+            </ul>
+            <div class="navbar-toggle" id="navbar-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="sidebar">      
+    </div>
+
+    <h1>Please enter the OTP from your registered email</h1>
+    <div id="otpRequestForm">
+        <button onclick="requestOtp()">Request OTP</button>
+    </div>
+    <div id="verifyOTPForm" style="display: none;">
+        <label for="otp">Enter OTP:</label>
+        <input type="text" id="otp" required>
+        <button onclick="verifyOTP()">Verify OTP</button>
+    </div>
+
+
+    <div id="updateForm" style="display: none;">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required><br>
+        <label for="number">Number:</label>
+        <input type="text" id="number" required><br>
+        <button onclick="updateInfo()">Update Information</button>
+    </div>
+    
+    <div id="message"></div>
+
+    <script src="edit.js"></script>
+</body>
+</html>

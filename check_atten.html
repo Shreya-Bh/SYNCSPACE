@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Attendance Tracker</title>
+    <link rel="stylesheet" href="check_atten.css">
+</head>
+<body>
+
+    <nav class="navbar" id="navbar">
+        <div class="navbar-container">
+            <ul class="navbar-menu" id="navbar-menu">
+                <li><a href="admin_page.php">Back</a></li>
+            </ul>
+            <div class="navbar-toggle" id="navbar-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <h1>Attendance Tracker</h1>
+        <div class="form-group">
+            <label for="userSelect">Select User:</label>
+            <select id="userSelect"></select>
+        </div>
+        <button id="showAttendanceBtn">Show Attendance</button>
+        <div id="attendanceReport"></div>
+    </div>
+
+    <script src="check_atten.js"></script>
+</body>
+</html>

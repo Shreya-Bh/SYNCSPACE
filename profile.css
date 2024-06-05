@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200;300;400;500;600;700;800&display=swap');
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    animation: fadeIn 1s ease-in-out forwards;
+    opacity: 0;
+    overflow: hidden;
+
+  }
+  
+  @keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
+  }
+  
+  .navbar {
+
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: black;
+    z-index: 1000;
+    transition: background-color 0.3s ease;
+  }
+  
+  .navbar-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    margin-top: -1%;
+  }
+  
+  .navbar-brand {
+    margin-left: -5%;
+    transform: scale(50%);
+    background-color: #ffffff;
+  }
+  
+  .navbar-menu {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  .navbar-menu li {
+    margin-right: 20px;
+    position: relative;
+  }
+  
+  .navbar-menu li a {
+    text-decoration: none;
+    color: #ffffff;
+    transition: color 0.3s ease;
+    position: relative;
+  }
+  
+  .navbar-menu li::after {
+    content: '';
+    height: 2.5px;
+    width: 0;
+    background: aqua;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    transition: 0.5s;
+  }
+  
+  .navbar-menu li:hover::after {
+    width: 100%;
+  }
+  
+  .navbar-menu li a:hover {
+    color: orangered;
+  }
+  
+  .navbar-toggle {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .navbar-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+    margin-bottom: 5px;
+  }
+
+  .a{
+
+    height: 900px;
+    width: 200px;
+background-color: black;
+  }
+
+  .container {
+ 
+  margin-top: 8%;
+  margin-left: 20%;
+  background-color: red;
+  width: 8%;
+  height: 16vh;
+  align-items: center; 
+  border-radius: 1000rem;
+  overflow: hidden;
+ 
+}
+
+.pic{
+
+height: 120px;
+width: 130px;
+
+}
+
+.aa{
+  display: flex;
+}
+
+.details{
+  margin-left: -17%;
+margin-top: 36%;
+height: 500px;
+width: 700px;
+
+
+display: grid;
+
+
+}
+.line{
+  margin-left: -19%;
+  margin-top: 10%;
+  background-color: black;
+  height: 2px;
+  width: 600px;
+}
+
+.z{
+margin-top: 170px;
+
+ margin-left: 10%;
+  font-family:"Raleway", sans-serif;
+  font-size:x-large;
+  font-weight: bolder;
+}
+
+.y{
+  margin-left: -10%;
+  margin-top: 100px;
+  font-family:"Raleway", sans-serif;
+  font-size:x-large;
+  font-weight: bolder;
+}
+
+.x{
+  margin-left: -10%;
+  margin-top: 80px;
+  font-family:"Raleway", sans-serif;
+  font-size:x-large;
+  font-weight: bolder;
+}
+
+.email-wrapper {
+  display: flex;
+
+}
+.number-wrapper {
+  display: flex;
+
+}
+
+
+.email {
+  margin-left: 2%;
+  margin-top: 102px;
+  font-family:'Times New Roman', Times, serif;
+  font-size:1.2rem;
+  font-weight:200;
+}
+
+.number{
+  margin-left: 2%;
+  margin-top: 83px;
+  font-family:'Times New Roman', Times, serif;
+  font-size:1.2rem;
+  font-weight: 200;
+}
+

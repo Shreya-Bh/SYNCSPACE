@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>User Profile</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="profile.css">
+</head>
+<body>
+  
+    <main>
+        <nav class="navbar" id="navbar">
+            <div class="navbar-container">
+                <div class="navbar-brand">
+                    <div class="logo">
+                        <img src="../MainProject/Media/logo.gif" loop>
+                    </div>
+                </div>
+                <ul class="navbar-menu" id="navbar-menu">
+                    <li><a href="edit.html">Edit</a></li>
+                    <li><a href="dashboard.html">Back</a></li>
+                    <li><a href="#" id="logoutBtn">Logout</a></li>
+                </ul>
+                <div class="navbar-toggle" id="navbar-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    <div class="aa">
+        <div class="a"></div>
+        <div class="container">
+            <img class ="pic"id="random-image" src="" >
+        </div>
+        <div id="profile">
+
+        </div>
+    </div>
+    </main>
+
+    <script>
+        $(document).ready(function() {
+
+            $.ajax({
+                url: 'profile.php',
+                type: 'GET', 
+                success: function(response) {
+                    $('#profile').html(response);
+                },
+                error: function(xhr, status, error) {
+                    console.error(xhr.responseText); 
+                }
+            });
+        });
+        
+    </script>
+    <script src="profile.js"></script>
+</body>
+</html>

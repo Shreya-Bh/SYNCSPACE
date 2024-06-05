@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="navbar-container">
+            <div class="navbar-brand">
+                <div class="logo">
+                    <img src="../MainProject/Media/logo.gif" loop>
+                </div>
+            </div>
+            <ul class="navbar-menu" id="navbar-menu">
+
+                <li><a href="dashboard.html">Back</a></li>
+               
+            </ul>
+            <div class="navbar-toggle" id="navbar-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="sidebar">
+        <a href="#" data-target="AssignTask">Assign a Task</a>
+        <a href="#" data-target="Group">Work As A Group</a>
+
+        
+    </div>
+
+    <div class="content-container" id="AssignTask">
+<div class="g">
+        <h2>Assign a Task</h2>
+        <form id="assignTaskForm" action="assign_task.php" method="post">
+            
+        
+            <label for="assignee">Assignee:</label>
+            <select name="assignee" id="assignee">
+            </select>
+        
+            
+            <label for="taskDescription">Task Description:</label>
+            <input type="text" name="taskDescription" id="taskDescription" required>
+        
+            <button class="submit" type="submit">Assign Task</button>
+        </form>
+</div>
+    </div>
+   
+    <div class="content-container" id="Group">
+        <div class="g">
+            <h2>Work As A Group</h2>
+    <form id="groupTaskForm" action="process_group_task.php" method="post">
+        <label for="taskDescription">Task Description:</label>
+        <textarea id="taskDescription" name="taskDescription" rows="4" cols="50" required></textarea><br><br>
+        <div id="assigneesContainer"></div>
+        <button type="button" onclick="addAssignee()">Add Assignee</button>
+        <button type="submit">Assign Task</button>
+    </form>
+    </div>
+    </div>
+    
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="assign_task.js"></script>
+</body>
+</html>

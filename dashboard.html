@@ -1,0 +1,94 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+
+    <link rel="stylesheet" href="dashboard.css">
+</head>
+<body>
+    <nav class="navbar" id="navbar">
+        <div class="navbar-container">
+            <div class="navbar-brand">
+                <div class="logo">
+                    <img src="../MainProject/Media/logo.gif" loop>
+                </div>
+            </div>
+            <ul class="navbar-menu" id="navbar-menu">
+                
+                <li><a href="check_attendance.php">Attendance</a></li>
+                <li><a href="check.php">Assign Task</a></li>
+                <li><a href="main.html">Home</a></li>
+                <li><a href="downloadatten.html">Download Attendance</a></li>
+                <li><a href="profile.html">Profile</a></li>
+            </ul>
+            <div class="navbar-toggle" id="navbar-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <div class="sidebar">
+        
+        <a href="#" data-target="YourWork">Your Work</a>
+        <a href="#" data-target="History">History</a>
+        <a href="#" data-target="GroupWork">Group Work</a>
+        <a href="#" data-target="GroupHistory">Group History</a>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+    <div class="content-container" id="YourWork">
+        <div id="tasks-container">
+        </div>
+    </div>
+
+
+
+
+    <div class="content-container" id="History">
+<div class="t">
+            <h2>Tasks Assigned to Me</h2>
+            <div id="tasks-assigned-to-me"></div>
+
+        
+
+            <h2>Tasks Assigned by Me</h2>
+            <div id="tasks-assigned-by-me"></div>
+
+    </div>
+    </div>
+
+
+
+    <div class="content-container" id="GroupWork">
+        <div id="tasks-containeri">
+        </div>
+    </div>
+
+
+    <div class="content-container" id="GroupHistory"> 
+        <div class="t">
+        <h2>Tasks Assigned by Me</h2>
+        <div id="assignedByMe"></div>
+    
+        <h2>Tasks Assigned to Me</h2>
+        <div id="assignedToMe"></div></div></div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="dashboard.js"></script>
+</body>
+</html>

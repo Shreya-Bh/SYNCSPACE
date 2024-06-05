@@ -1,0 +1,223 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+ }
+ 
+ body {
+    font-family: Arial, sans-serif;
+ }
+ 
+ .container {
+    display: flex;
+    height: 100vh;
+ }
+ 
+ .sidebar {
+    width: 250px;
+    background-color: #333;
+    color: #fff;
+    transition: width 0.3s ease;
+    overflow-y: auto;
+ }
+ 
+ .sidebar-header {
+    padding: 20px;
+ }
+ 
+ .sidebar-menu {
+    list-style-type: none;
+    padding: 0;
+ }
+ 
+ .sidebar-menu a {
+    display: block;
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+    transition: background-color 0.3s ease;
+ }
+ 
+ .sidebar-menu a:hover {
+    background-color: #555;
+ }
+ 
+ .content {
+    flex: 1;
+    padding: 20px;
+ }
+ 
+ .topbar {
+    display: flex;
+    justify-content: flex-end;
+    margin-bottom: 20px;
+ }
+ 
+ .topbar-right {
+    margin-right: 20px;
+ }
+ 
+ .btn {
+    padding: 10px 20px;
+    background-color: black;
+    
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    text-decoration: none;
+ }
+ 
+ .btn:hover {
+   color: orangered;
+   background-color: black;
+ }
+
+ 
+
+.add-department-form {
+    position: fixed;
+    top: 0;
+    left: -800px;
+    width: 800px;
+    height: 100%;
+    background-color: #fff;
+    z-index: 1000;
+    transition: left 0.3s ease;
+    padding: 20px;
+ }
+ 
+ .add-department-form h2 {
+    margin-bottom: 20px;
+ }
+ 
+ .add-department-form .form-group {
+    margin-bottom: 20px;
+ }
+ 
+ .add-department-form.active {
+    left: 0;
+ }
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+.add-manager-form {
+   position: fixed;
+   top: 0;
+   left: -800px;
+   width: 800px;
+   height: 100%;
+   background-color: #fff;
+   z-index: 1000;
+   transition: left 0.3s ease;
+   padding: 20px;
+}
+
+.add-manager-form h2 {
+   margin-bottom: 20px;
+}
+
+.add-manager-form .form-group {
+   margin-bottom: 20px;
+}
+
+.add-manager-form.active {
+   left: 0;
+}
+
+.add-manager-form label {
+   display: block;
+   margin-bottom: 5px;
+}
+
+.add-manager-form select {
+   width: 100%;
+   padding: 10px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   outline: none;
+   font-size: 16px;
+   margin-bottom: 10px;
+}
+
+.add-manager-form button {
+   padding: 10px 20px;
+   background-color: black;
+    
+   color: #fff;
+   border: none;
+   cursor: pointer;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+.add-manager-form button:hover {
+   color: orangered;
+   background-color: black;
+}
+
+.add-manager-form {
+   position: fixed;
+   top: 0;
+   left: -800px;
+   width: 800px;
+   height: 100%;
+   background-color: #fff;
+   z-index: 1000;
+   transition: left 0.3s ease;
+   padding: 20px;
+}
+
+.add-manager-form h2 {
+   margin-bottom: 20px;
+}
+
+.add-manager-form .form-group {
+   margin-bottom: 20px;
+}
+
+.add-manager-form.active {
+   left: 0;
+}
+
+.add-manager-form label {
+   display: block;
+   margin-bottom: 5px;
+}
+
+.add-manager-form select {
+   width: 100%;
+   padding: 10px;
+   border: 1px solid #ccc;
+   border-radius: 5px;
+   outline: none;
+   font-size: 16px;
+   margin-bottom: 10px;
+}
+
+.add-manager-form button {
+   padding: 10px 20px;
+   background-color: black;
+    
+   color: #fff;
+   border: none;
+   cursor: pointer;
+   border-radius: 5px;
+   cursor: pointer;
+}
+
+.add-manager-form button:hover {
+   color: orangered;
+   background-color: black;
+}
