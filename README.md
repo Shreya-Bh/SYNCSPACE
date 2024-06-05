@@ -60,7 +60,7 @@ https://github.com/Shreya-Bh/SyncSpace/assets/124278638/67a6b7c7-27e8-41b7-a901-
 ![recss2](https://github.com/Shreya-Bh/SyncSpace/assets/124278638/19feaad9-bd4c-4de6-87aa-f6b0fff5b55f)
 
 ## Note
-This project initially used the Indian Oil Corporation (IOCL) logo because it was developed during my internship at IOCL and was built for their use. However, this project is not an official IOCL website, and IOCL has not published this project. The logo has since been removed from the project, but some screen recordings still contain the IOCL logo. These recordings are solely for educational purposes within the scope of the internship project.
+This project initially used the Indian Oil Corporation Limited(IOCL) logo because it was developed during my internship at IOCL and was built for their use. However, this project is not an official IOCL website, and IOCL has not published this project. The logo has since been removed from the project, but some screen recordings still contain the IOCL logo. These recordings are solely for educational purposes within the scope of the internship project.
 
 
 
